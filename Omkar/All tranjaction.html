@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+      
+      body
+      {
+        background: #FC5C7D;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+
+    </style>
+
+    <title>Doner Information</title>
+  </head>
+  <body>
+
+    <!--Nav bar code-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="logo.gif" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Donors
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item active" >
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Campaigns</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Doners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Donate</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Account
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Login In</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                </ul>
+              </li>
+
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!--nav bar code ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- title start here -->
+      <div class=" text-white">
+        <h1 class="text-center  text-info">All Tranctions</h1>
+       
+  </div>
+
+    <div  class="  border border-secondary p-4 m-5 mt-5 mb-5 bg-dark" style="opacity: 0.8;">
+    <div class="  d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-around">
+            <input type="text" class="form-control mb-3 me-5 " placeholder="Campagin Name">
+            <input type="text" class="form-control mb-3 me-5" placeholder="Unique Id">
+            <button class="btn btn-outline-success px-5  mb-3  me-5" type="submit">Search</button>
+        </div>
+
+              
+        </div>
+        <hr class="text-light">
+
+        <!-- table start here -->
+
+        <div class="container mt-2 p-0">
+  <div class="table-responsive bg-light">
+        
+
+      <table class="table" id="myTable">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Date</th>
+              <th scope="col">Txn Hash</th>
+              <th scope="col">Donaer Name</th>
+              <th scope="col">Benificary Address</th>
+              <th scope="col">Campaign Name</th>
+              <th scope="col">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>15/12/2021</td>
+              <td><a href="https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f" style="text-decoration: none;" target="_blank">bc1qwxpmv9wy7nc0335crtdg87wlfpjzucuefh763w</a></td>
+              <td>XYZ</td>
+              <td><a href="https://etherscan.io/address/0x3d7722368b55caed844e1efa621c9db44953b416" style="text-decoration: none;" target="_blank">0x3d7722368b55caed844e1efa621c9db44953b416</a></td>
+              <td>Covid-19</td>
+              <td>500$ DAI</td>
+            </tr>
+
+            <tr>
+              <th scope="row">2</th>
+              <td>15/12/2021</td>
+              <td><a href="https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f" style="text-decoration: none;" target="_blank">bc1qwxpmv9wy7nc0335crtdg87wlfpjzucuefh763w</a></td>
+              <td>XYZ</td>
+              <td><a href="https://etherscan.io/address/0x3d7722368b55caed844e1efa621c9db44953b416" style="text-decoration: none;" target="_blank">0x3d7722368b55caed844e1efa621c9db44953b416</a></td>
+              <td>Covid-19</td>
+              <td>500$ DAI</td>
+            </tr>
+
+            <tr>
+              <th scope="row">3</th>
+              <td>15/12/2021</td>
+              <td><a href="https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f" style="text-decoration: none;" target="_blank">bc1qwxpmv9wy7nc0335crtdg87wlfpjzucuefh763w</a></td>
+              <td>XYZ</td>
+              <td><a href="https://etherscan.io/address/0x3d7722368b55caed844e1efa621c9db44953b416" style="text-decoration: none;" target="_blank">0x3d7722368b55caed844e1efa621c9db44953b416</a></td>
+              <td>Covid-19</td>
+              <td>500$ DAI</td>
+            </tr>
+
+            <tr>
+              <th scope="row">4</th>
+              <td>15/12/2021</td>
+              <td><a href="https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f" style="text-decoration: none;" target="_blank">bc1qwxpmv9wy7nc0335crtdg87wlfpjzucuefh763w</a></td>
+              <td>XYZ</td>
+              <td><a href="https://etherscan.io/address/0x3d7722368b55caed844e1efa621c9db44953b416" style="text-decoration: none;" target="_blank">0x3d7722368b55caed844e1efa621c9db44953b416</a></td>
+              <td>Covid-19</td>
+              <td>500$ DAI</td>
+            </tr>
+
+            <tr>
+              <th scope="row">5</th>
+              <td>15/12/2021</td>
+              <td><a href="https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f" style="text-decoration: none;" target="_blank">bc1qwxpmv9wy7nc0335crtdg87wlfpjzucuefh763w</a></td>
+              <td>XYZ</td>
+              <td><a href="https://etherscan.io/address/0x3d7722368b55caed844e1efa621c9db44953b416" style="text-decoration: none;" target="_blank">0x3d7722368b55caed844e1efa621c9db44953b416</a></td>
+              <td>Covid-19</td>
+              <td>500$ DAI</td>
+            </tr>
+
+            <tr>
+              <th scope="row">6</th>
+              <td>15/12/2021</td>
+              <td><a href="https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f" style="text-decoration: none;" target="_blank">bc1qwxpmv9wy7nc0335crtdg87wlfpjzucuefh763w</a></td>
+              <td>XYZ</td>
+              <td><a href="https://etherscan.io/address/0x3d7722368b55caed844e1efa621c9db44953b416" style="text-decoration: none;" target="_blank">0x3d7722368b55caed844e1efa621c9db44953b416</a></td>
+              <td>Covid-19</td>
+              <td>500$ DAI</td>
+            </tr>
+
+            <tr>
+              <th scope="row">7</th>
+              <td>15/12/2021</td>
+              <td><a href="https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f" style="text-decoration: none;" target="_blank">bc1qwxpmv9wy7nc0335crtdg87wlfpjzucuefh763w</a></td>
+              <td>XYZ</td>
+              <td><a href="https://etherscan.io/address/0x3d7722368b55caed844e1efa621c9db44953b416" style="text-decoration: none;" target="_blank">0x3d7722368b55caed844e1efa621c9db44953b416</a></td>
+              <td>Covid-19</td>
+              <td>500$ DAI</td>
+            </tr>
+
+            <tr>
+              <th scope="row">8</th>
+              <td>15/12/2021</td>
+              <td><a href="https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f" style="text-decoration: none;" target="_blank">bc1qwxpmv9wy7nc0335crtdg87wlfpjzucuefh763w</a></td>
+              <td>XYZ</td>
+              <td><a href="https://etherscan.io/address/0x3d7722368b55caed844e1efa621c9db44953b416" style="text-decoration: none;" target="_blank">0x3d7722368b55caed844e1efa621c9db44953b416</a></td>
+              <td>Covid-19</td>
+              <td>500$ DAI</td>
+            </tr>
+
+            <tr>
+              <th scope="row">9</th>
+              <td>15/12/2021</td>
+              <td><a href="https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f" style="text-decoration: none;" target="_blank">bc1qwxpmv9wy7nc0335crtdg87wlfpjzucuefh763w</a></td>
+              <td>XYZ</td>
+              <td><a href="https://etherscan.io/address/0x3d7722368b55caed844e1efa621c9db44953b416" style="text-decoration: none;" target="_blank">0x3d7722368b55caed844e1efa621c9db44953b416</a></td>
+              <td>Covid-19</td>
+              <td>500$ DAI</td>
+            </tr>
+
+            <tr>
+              <th scope="row">10</th>
+              <td>15/12/2021</td>
+              <td><a href="https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f" style="text-decoration: none;" target="_blank">bc1qwxpmv9wy7nc0335crtdg87wlfpjzucuefh763w</a></td>
+              <td>XYZ</td>
+              <td><a href="https://etherscan.io/address/0x3d7722368b55caed844e1efa621c9db44953b416" style="text-decoration: none;" target="_blank">0x3d7722368b55caed844e1efa621c9db44953b416</a></td>
+              <td>Covid-19</td>
+              <td>500$ DAI</td>
+            </tr>
+  
+          </tbody>
+      </table>
+    </div>
+    <br>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+</div>
+</div>
+
+
+
+
+
+
+ <!--  footer satrt here -->
+
+  <footer class="text-center text-white" style="background-color: #797c80">
+        <!-- Grid container -->
+        <div class="container">
+          <!-- Section: Links -->
+          <section class="mt-5">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5">
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-Camelcase font-weight-bold">
+                  <a href="#!" class="text-white">About us</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-Camelcase font-weight-bold">
+                  <a href="#!" class="text-white">Subscribe</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-Camelcase font-weight-bold">
+                  <a href="#!" class="text-white">Help</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-Camelcase font-weight-bold">
+                  <a href="#!" class="text-white">Contact Us</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
+  
+          <hr class="my-5">
+  
+          <!-- Section: Text -->
+          <section class="mb-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-8">
+                <p>
+                  Blockchain is a promising technology for charities as they look to promote transparency and at the same time cut the risk of fraud. 
+                  But too often it is being ignored by charities through a lack of understanding, 
+                  which can be due to a lack of technical expertise, 
+                  as well as difficulty in explaining how it can offer charities tangible benefits.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Text -->
+  
+          <!-- Section: Social -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+  
+            <!-- Twitter -->
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+  
+            <!-- Google -->
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+  
+            <!-- Instagram -->
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+  
+            <!-- Linkedin -->
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+            <!-- Github -->
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+          </section>
+          <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+  
+        <!-- Copyright -->
+        <div
+            class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+          © 2021 Copyright :
+          <a class="text-white" href=""
+            >Doner's.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
