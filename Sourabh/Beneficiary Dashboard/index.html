@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Beneficiary Dashboard</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .my-bg-col {
+                background: #36d1dc; /* fallback for old browsers */
+                background: -webkit-linear-gradient(to left, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to left, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">
+                    <a class="navbar-brand bg-light text-dark" href="index.html">Hello Beneficiary</a>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3 active" href="index.html">My Report</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="my_campaign.html">View Campaign</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="view_balance.html">View Balance</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="my_profile.html">Manage Profile</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="kyc.html">KYC</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" data-bs-toggle="modal" data-bs-target="#logoutModal">Logout</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper" class="my-bg-col">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="btn btn-primary" id="sidebarToggle"><span class="navbar-toggler-icon"></span></button>
+                        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> -->
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="mt-3">
+                    <h1 class="text-center">Report</h1>
+                </div>
+                <div class="container-fluid p-3">
+                    <div class="table-responsive">
+                        <table class="table" id="myTable">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Donor Name</th>
+                                    <th scope="col">TXN Hash</th>
+                                    <th scope="col">Donor Address</th>
+                                    <th scope="col">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>25-02-2022</td>
+                                    <td>Sourabh Jamdade</td>
+                                    <td class="text-break">
+                                        <a href="https://etherscan.io/tx/0x37fdb73bf682b2edef79832139be69608952afde72be2dce1d88902682dfaf55" style="text-decoration: none;" target="_blank">
+                                            0x37fdb73bf682b2edef79832139be69608952afde72be2dce1d88902682dfaf55
+                                        </a>
+                                    </td>
+                                    <td class="text-break"><a href="https://etherscan.io/address/0x503828976d22510aad0201ac7ec88293211d23da" style="text-decoration: none;" target="_blank">0x503828976d22510aad0201ac7ec88293211d23da</a></td>
+                                    <th>500$ MOSS</th>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>25-02-2022</td>
+                                    <td>Sourabh Jamdade</td>
+                                    <td class="text-break">
+                                        <a href="https://etherscan.io/tx/0x37fdb73bf682b2edef79832139be69608952afde72be2dce1d88902682dfaf55" style="text-decoration: none;" target="_blank">
+                                            0x37fdb73bf682b2edef79832139be69608952afde72be2dce1d88902682dfaf55
+                                        </a>
+                                    </td>
+                                    <td class="text-break"><a href="https://etherscan.io/address/0x503828976d22510aad0201ac7ec88293211d23da" style="text-decoration: none;" target="_blank">0x503828976d22510aad0201ac7ec88293211d23da</a></td>
+                                    <th>500$ MOSS</th>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>25-02-2022</td>
+                                    <td>Sourabh Jamdade</td>
+                                    <td class="text-break">
+                                        <a href="https://etherscan.io/tx/0x37fdb73bf682b2edef79832139be69608952afde72be2dce1d88902682dfaf55" style="text-decoration: none;" target="_blank">
+                                            0x37fdb73bf682b2edef79832139be69608952afde72be2dce1d88902682dfaf55
+                                        </a>
+                                    </td>
+                                    <td class="text-break"><a href="https://etherscan.io/address/0x503828976d22510aad0201ac7ec88293211d23da" style="text-decoration: none;" target="_blank">0x503828976d22510aad0201ac7ec88293211d23da</a></td>
+                                    <th>500$ MOSS</th>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>25-02-2022</td>
+                                    <td>Sourabh Jamdade</td>
+                                    <td class="text-break">
+                                        <a href="https://etherscan.io/tx/0x37fdb73bf682b2edef79832139be69608952afde72be2dce1d88902682dfaf55" style="text-decoration: none;" target="_blank">
+                                            0x37fdb73bf682b2edef79832139be69608952afde72be2dce1d88902682dfaf55
+                                        </a>
+                                    </td>
+                                    <td class="text-break"><a href="https://etherscan.io/address/0x503828976d22510aad0201ac7ec88293211d23da" style="text-decoration: none;" target="_blank">0x503828976d22510aad0201ac7ec88293211d23da</a></td>
+                                    <th>500$ MOSS</th>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>25-02-2022</td>
+                                    <td>Sourabh Jamdade</td>
+                                    <td class="text-break">
+                                        <a href="https://etherscan.io/tx/0x37fdb73bf682b2edef79832139be69608952afde72be2dce1d88902682dfaf55" style="text-decoration: none;" target="_blank">
+                                            0x37fdb73bf682b2edef79832139be69608952afde72be2dce1d88902682dfaf55
+                                        </a>
+                                    </td>
+                                    <td class="text-break"><a href="https://etherscan.io/address/0x503828976d22510aad0201ac7ec88293211d23da" style="text-decoration: none;" target="_blank">0x503828976d22510aad0201ac7ec88293211d23da</a></td>
+                                    <th>500$ MOSS</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- page no-->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Logout</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Select "Logout" below if you are ready to end your current session.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
